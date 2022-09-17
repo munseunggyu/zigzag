@@ -1,14 +1,72 @@
 :root {
     font-family: 'Montserrat', sans-serif;
-	/*
-	font-weight: 500;
-	font-weight: 700;
-	*/
+
 }
 * {
 	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	
 }
 /* red #d9501a */
 /* lorem #a887e1 */
-
-
+.ir{
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+body{
+	margin: 0;
+	background-color: #673399;
+	width: 100vw;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+/* fz 40 30 18 14 */
+/* 위아래 간격 100px */
+/* 사진 26% */
+/* li padding 24 */
+/* linestyle 10px */
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 350px;
+}
+header{
+	display: flex;
+	justify-content: center;
+	
+}
+.h1 {
+	width: 26%;
+	display: block;
+	margin-right: 17px;
+}
+header h1 p{
+	font-size: 30px;
+	color: white;
+	font-weight: 500;
+}
+.red{
+	background: linear-gradient(to top, #FE4600 50%, transparent 50%);
+	display: inline-block;
+}
+.h1-p-container{
+	width: calc(100%-26%);
+	display: flex;
+	padding-right: 160px;
+	align-items: center;
+}
+.h1-txt{
+	color: white;
+	opacity: .5;
+	font-size: 12px;
+}
+.line{
+	width: 160px;
+	border-top: 2px solid #846EAE;
+	margin-right: 17px;
+}
