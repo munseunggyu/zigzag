@@ -8,14 +8,17 @@
 	padding: 0;
 	
 }
-/* red #d9501a */
-/* lorem #a887e1 */
+
 .ir{
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
   overflow: hidden;
+}
+li::marker{
+	color:#846EAE
+
 }
 body{
 	margin: 0;
@@ -24,11 +27,7 @@ body{
 	margin: 0 auto;
 	margin-top: 100px;
 }
-/* fz 40 30 18 14 */
-/* 위아래 간격 100px */
-/* 사진 26% */
-/* li padding 24 */
-/* linestyle 10px */
+
 .wrapper{
 	display: flex;
 	flex-direction: column;
@@ -38,7 +37,8 @@ body{
 header{
 	display: flex;
 	justify-content: center;
-	
+	margin-bottom: 100px;
+
 }
 .h1 {
 	width: 26%;
@@ -69,4 +69,85 @@ header h1 p{
 	width: 160px;
 	border-top: 2px solid #846EAE;
 	margin-right: 17px;
+}
+main{
+	width: 100%;
+}
+section{
+	margin-bottom: 14px;
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+.rest{
+	width: auto;
+}
+.rest_bg::after{
+	background-image: url("./images/photo01.png");
+  width: 26%;
+  height: 100%;
+  content: "";
+	opacity: .5;
+  position: absolute;
+  top: 0;	
+	background-position: center;
+	background-size: cover;
+	z-index: -1;
+  left: 0;
+}
+.craft_bg::after{
+	background-image: url("./images/photo02.png");
+  width: 26%;
+  height: 100%;
+  content: "";
+	opacity: .5;
+  position: absolute;
+  top: 0;	
+	background-position: center;
+	background-size: cover;
+	z-index: -1;
+  right: 0;
+}
+.scrap_bg::after{
+	background-image: url("./images/photo03.png");
+  width: 26%;
+  height: 100%;
+  content: "";
+	opacity: .5;
+  position: absolute;
+  top: 0;	
+	background-position: center;
+	background-size: cover;
+	z-index: -1;
+  left: 0;
+}
+.bgImg::after {
+
+}
+
+.bgImg{
+	width: 26%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	opacity: 1;
+	font-size: 25px;
+}
+.craft{
+	flex-direction: row-reverse;
+}
+.txt{
+	background-color: white;
+	padding: 14px;
+	width: 74%;
+}
+.txt h2{
+	font-size: 18px;
+	color: #673399;
+	padding-bottom: 14px;
+}
+.txt li{
+	margin-left: 14px;
+	font-size: 10px;
 }
